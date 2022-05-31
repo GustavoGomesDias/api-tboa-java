@@ -41,7 +41,7 @@ public abstract class GenericDAOImp<T extends Serializable> implements GenericDA
             this.entityManager.persist(entity);
             this.entityManager.getTransaction().commit();
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.println(e.getStackTrace());
             throw e;
         }
     }

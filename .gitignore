@@ -33,3 +33,5 @@ build/
 .vscode/
 
 **/main/**/application.properties
+
+**/META-INF
